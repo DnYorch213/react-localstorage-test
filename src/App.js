@@ -6,7 +6,7 @@ import { TaskTable } from "./components/TaskTable";
 import { Container } from "./components/Container";
 
 function App() {
-  const [userName, setUserName] = useState("Fazt");
+  const [userName, setUserName] = useState("Yorch");
   const [taskItems, setTaskItems] = useState([]);
   const [showCompleted, setshowCompleted] = useState(false);
 
@@ -15,7 +15,7 @@ function App() {
     if (data) {
       setTaskItems(JSON.parse(data));
     }
-    setUserName("fazt");
+    setUserName("Yorch");
   }, []);
 
   useEffect(() => {
